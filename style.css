@@ -1,0 +1,88 @@
+/* Google Font import */
+@import url('https://fonts.googleapis.com/css?family=Exo:700|Righteous&display=swap');
+
+/* Color Pallete:
+    #0B0C10
+    #1F2833
+    #C5C6C7
+    #66FCF1
+    #45A29E
+*/
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/assets/alfred-kenneally-iZPNopyAToU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.jumbotron {
+    background: transparent;
+    color: white;
+}
+
+
+.jumbotron hr {
+    width: 50%;
+    background-color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #66FCF1;
+    white-space: nowrap;
+}
+
+.navbar {
+    background-color: #0B0C10;
+    height: 8vh;
+}
+
+.card-body {
+    background-color: #1F2833;
+    color: #66FCF1;
+}
+
+footer {
+    background-color: transparent;
+    height: 25vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 400px;
+    font-size: 34px;
+    color: #66FCF1;
+}
+
+footer label {
+    color: #66FCF1;
+}
+
+.iconSpot {
+    display: flex;
+    justify-content: center;
+}
+
+.display-1 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 700px;
+    font-size: 120px;
+    color: #66FCF1;
+}
+
+.lead {
+    font-family: 'Righteous', cursive;
+    font-weight: 24px;
+    font-size: 28px;
+    color: #66FCF1;
+}
