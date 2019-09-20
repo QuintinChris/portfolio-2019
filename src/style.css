@@ -27,6 +27,7 @@ body {
 .jumbotron hr {
     width: 50%;
     background-color: whitesmoke;
+    height: 0.5vh;
 }
 
 .container {
@@ -37,11 +38,21 @@ body {
 .navbar-nav .nav-item .nav-link {
     color: #66FCF1;
     white-space: nowrap;
+    font-family: 'Righteous', cursive;
+    font-size: 22px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #45A29E;
 }
 
 .navbar {
     background-color: #0B0C10;
-    height: 8vh;
+    height: 10vh;
+}
+
+.fa-laptop-code:hover {
+    color: #45A29E !important;
 }
 
 .card-body {
@@ -66,11 +77,43 @@ footer h3 {
 
 footer label {
     color: #66FCF1;
+    font-weight: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.footerArea {
+    text-align: center;
 }
 
 .iconSpot {
     display: flex;
     justify-content: center;
+}
+
+.iconSpot a:hover {
+    color: #45A29E;
+}
+
+#resumeLink {
+    color: #66FCF1;
+}
+
+#resumeLink:hover {
+    color: #45A29E;
+    text-decoration: none;
+}
+
+#githubIcon {
+    background-color: none;
+    color: #66FCF1;
+    justify-self: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#githubIcon:hover {
+    color: #45A29E !important;
 }
 
 .display-1 {
@@ -85,4 +128,27 @@ footer label {
     font-weight: 24px;
     font-size: 28px;
     color: #66FCF1;
+}
+
+.card-footer {
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-footer button {
+    margin-bottom: 0;
+
+}
+
+.btn-dark {
+    color: #66FCF1;
+    border: solid 1px #66FCF1;
+    font-family: 'Righteous', cursive;
+}
+
+.btn-dark:hover {
+    color: #45A29E;
+    border: solid 1px #45A29E;
 }
