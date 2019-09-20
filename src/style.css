@@ -60,12 +60,16 @@ body {
     color: #66FCF1;
 }
 
+.card-deck {
+    justify-content: space-between;
+}
+
 footer {
     background-color: transparent;
     height: 25vh;
-    padding: 30px;
+    padding-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 footer h3 {
@@ -108,8 +112,8 @@ footer label {
     background-color: none;
     color: #66FCF1;
     justify-self: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 #githubIcon:hover {
@@ -151,4 +155,22 @@ footer label {
 .btn-dark:hover {
     color: #45A29E;
     border: solid 1px #45A29E;
+}
+
+.emailBtnSpot {
+    justify-self: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+#emailBtn {
+    color: #66FCF1;
+}
+
+#emailBtn:hover {
+    color: #45A29E;
+}
+
+.footerArea2 {
+    text-align: center;
 }
