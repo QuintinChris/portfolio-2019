@@ -33,7 +33,7 @@
                         href="https://www.dropbox.com/s/hlp2o6e9n61090y/chrisQuintinResume.docx?dl=0">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" style="cursor: pointer;" onclick="copyEmail('#emailText')">Contact</a>
                 </li>
             </ul>
         </div>
@@ -179,31 +179,27 @@
     <!-- Footer -->
     <div class="container-fluid">
         <footer id="contact" class="text-muted">
-            <div class="form-ground col-md-6">
+            <div class="footerArea2">
                 <h3>Want to get in touch?</h3>
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Name">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-                <button type="button" class="btn btn-dark"
-                    style="margin-top: 10px; margin-bottom: 20px;">Submit</button>
-            </div>
-            <div class="footerArea">
-                <h3>Want to see more of my work?</h3>
-                <div class="iconSpot">
-                    <a href="https://github.com/QuintinChris">
-                        <i id="githubIcon" class="fab fa-github-square fa-10x"></i>
-                    </a>
+                <div class="emailBtnSpot">
+                    <p id="emailText" style="display: none">quintinchrisdev@gmail.com</p>
+                    <a id="emailBtn" class="btn btn-dark" onclick="copyEmail('#emailText')">Send me an
+                        email!</a>
                 </div>
-                <h3>Don't forget to check out my
+                <h3 id="resumeText">Don't forget to check out my
                     <a id="resumeLink" href="https://www.dropbox.com/s/hlp2o6e9n61090y/chrisQuintinResume.docx?dl=0">
                         resume!
                     </a>
                 </h3>
             </div>
-    </div>
+            <div class="footerArea">
+                <h3>Want to see more of my work?</h3>
+                <div class="iconSpot">
+                    <a href="https://github.com/QuintinChris">
+                        <i id="githubIcon" class="fab fa-github-square fa-8x"></i>
+                    </a>
+                </div>
+            </div>
     </footer>
     </div>
 </body>
