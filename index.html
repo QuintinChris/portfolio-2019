@@ -10,38 +10,46 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/21806351ad.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="src/scripts.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
         <div class="container d-flex justify-content-flex-start">
-            <a class="navbar-brand" href="#"><i class="fas fa-laptop-code" style="color: #66FCF1"></i></a>
+            <a class="navbar-brand" href="#home"><i class="fas fa-laptop-code fa-2x" style="color: #66FCF1"></i></a>
         </div>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://www.dropbox.com/s/hlp2o6e9n61090y/chrisQuintinResume.docx?dl=0">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="container-fluid">
-        <div id="jumbo1" class="jumbotron text-center">
+    <!-- Jumbotron -->
+    <div id="home" class="container-fluid">
+        <div class="jumbotron text-center">
             <h1 class="display-1">HELLO</h1>
             <hr class="my-4">
             <p class="lead">I'm Chris, a Floridian student studying software engineering.</p>
             <button type="button" class="btn btn-dark">Check Out My Projects!</button>
         </div>
+        <!-- Portfolio -->
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
+            <div class="row" style="justify-content: center;">
+                <div id="portfolio" class="card-deck col-md-9">
                     <div class="card mb-4">
                         <div class="view overlay">
                             <img class="card-img-top" src="/assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg">
@@ -50,11 +58,17 @@
                             </a>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">First Project</h4>
-                            <p class="card-text">A quick project i made that does this thing, that thing, and also this!
+                            <h4 class="card-title">Android Conversion App</h4>
+                            <p class="card-text">
+                                This app uses a spinner to display conversion options, and allows users to choose an
+                                element. It then updates labels according to selection, and once you enter a number to
+                                convert and hit enter or click convert button, the conversion value will display across
+                                from appropriate label.
                             </p>
-                            <button type="button" class="btn btn-dark btn-md">See Code</button>
-                            <button type="button" class="btn btn-dark btn-md">View Live</button>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-dark btn-md">See Code</button>
+                                <button type="button" class="btn btn-dark btn-md">View Live</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card mb-4">
@@ -65,13 +79,20 @@
                             </a>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">First Project</h4>
-                            <p class="card-text">A quick project i made that does this thing, that thing, and also this!
+                            <h4 class="card-title">Etch-a-Sketch</h4>
+                            <p class="card-text">
+                                This is a JavaScript project that creates a grid that colors the individual grid squares
+                                when a user hovers over them, similar to an old etch-a-sketch. There are options for the
+                                user to change colors or clear the grid and start over.
                             </p>
-                            <button type="button" class="btn btn-dark btn-md">See Code</button>
-                            <button type="button" class="btn btn-dark btn-md">View Live</button>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-dark btn-md">See Code</button>
+                                <button type="button" class="btn btn-dark btn-md">View Live</button>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="card-deck col-md-9">
                     <div class="card mb-4">
                         <div class="view overlay">
                             <img class="card-img-top" src="/assets/temple-cerulean-tP8ZwlCF8og-unsplash.jpg">
@@ -80,70 +101,82 @@
                             </a>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">First Project</h4>
-                            <p class="card-text">A quick project i made that does this thing, that thing, and also this!
+                            <h4 class="card-title">Android Area Calculator</h4>
+                            <p class="card-text">
+                                This calculator allows user to input values for width and height, and will automatically
+                                output the value of the area based on those given values.
                             </p>
-                            <button type="button" class="btn btn-dark btn-md">See Code</button>
-                            <button type="button" class="btn btn-dark btn-md">View Live</button>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-dark btn-md">See Code</button>
+                                <button type="button" class="btn btn-dark btn-md">View Live</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="/assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Javascript Calculator</h4>
+                            <p class="card-text">
+                                This calculator is built in JavaScript and is a fully functioning simple calculator,
+                                allowing the user to complete most basic mathematical operations.
+                            </p>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-dark btn-md">See Code</button>
+                                <button type="button" class="btn btn-dark btn-md">View Live</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck col-md-9">
+                    <div class="card mb-4">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="/assets/caspar-camille-rubin-89xuP-XmyrA-unsplash.jpg">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Android Game Emulator</h4>
+                            <p class="card-text">
+
+                            </p>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-dark btn-md">See Code</button>
+                                <button type="button" class="btn btn-dark btn-md">View Live</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="/assets/temple-cerulean-tP8ZwlCF8og-unsplash.jpg">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Java or C++ Something</h4>
+                            <p class="card-text">
+
+                            </p>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-dark btn-md" style="margin: 0;">See Code</button>
+                                <button type="button" class="btn btn-dark btn-md" style="margin: 0;">View Live</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="card-deck">
-                <div class="card mb-4">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="/assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg">
-                        <a href="#">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">First Project</h4>
-                        <p class="card-text">A quick project i made that does this thing, that thing, and also this!
-                        </p>
-                        <button type="button" class="btn btn-dark btn-md">See Code</button>
-                        <button type="button" class="btn btn-dark btn-md">View Live</button>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="/assets/caspar-camille-rubin-89xuP-XmyrA-unsplash.jpg">
-                        <a href="#">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">First Project</h4>
-                        <p class="card-text">A quick project i made that does this thing, that thing, and also this!
-                        </p>
-                        <button type="button" class="btn btn-dark btn-md">See Code</button>
-                        <button type="button" class="btn btn-dark btn-md">View Live</button>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <div class="view overlay">
-                        <img class="card-img-top" src="/assets/temple-cerulean-tP8ZwlCF8og-unsplash.jpg">
-                        <a href="#">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">First Project</h4>
-                        <p class="card-text">A quick project i made that does this thing, that thing, and also this!
-                        </p>
-                        <button type="button" class="btn btn-dark btn-md">See Code</button>
-                        <button type="button" class="btn btn-dark btn-md">View Live</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    </div>
+    <!-- Footer -->
     <div class="container-fluid">
-        <footer class="text-muted">
-            <div class="form-groud col-md-6">
+        <footer id="contact" class="text-muted">
+            <div class="form-ground col-md-6">
                 <h3>Want to get in touch?</h3>
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="inputName" placeholder="Name">
@@ -151,16 +184,24 @@
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                 <label for="message">Message</label>
                 <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+                <button type="button" class="btn btn-dark"
+                    style="margin-top: 10px; margin-bottom: 20px;">Submit</button>
             </div>
             <div class="footerArea">
                 <h3>Want to see more of my work?</h3>
                 <div class="iconSpot">
                     <a href="https://github.com/QuintinChris">
-                        <i class="fab fa-github-square fa-10x" style="color: #66FCF1; justify-self: center;"></i>
+                        <i id="githubIcon" class="fab fa-github-square fa-10x"></i>
                     </a>
                 </div>
+                <h3>Don't forget to check out my
+                    <a id="resumeLink" href="https://www.dropbox.com/s/hlp2o6e9n61090y/chrisQuintinResume.docx?dl=0">
+                        resume!
+                    </a>
+                </h3>
             </div>
-        </footer>
+    </div>
+    </footer>
     </div>
 </body>
 
