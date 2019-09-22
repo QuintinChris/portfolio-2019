@@ -174,3 +174,22 @@ footer label {
 .footerArea2 {
     text-align: center;
 }
+
+#hamburger {
+    color: #66FCF1;
+}
+
+.portfolioSection {
+    background: black;
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#home {
+    background: transparent;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
