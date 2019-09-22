@@ -19,5 +19,5 @@ function copyEmail(element) {
     $temp.val($(element).text()).select();
     document.execCommand("copy");
     $temp.remove();
-    alert('Copied to clipboard!')
+    alert('Email address copied to clipboard!')
 }
