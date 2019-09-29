@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
+    margin: 0;
 }
 
 .jumbotron {
@@ -192,4 +193,13 @@ footer label {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#Copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 17vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
